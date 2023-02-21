@@ -67,19 +67,20 @@ ui <- fluidPage(theme = "ocean.css",
                                                                       label = "Choose species:",
                                                                       choices = unique(starwars$species)
                                                    ),
-                                                 #  sidebarPanel("Learn more about stressors here:",
-                                                 #               radioButtons(inputId = "pick_species",
-                                                  #                                 label = "Choose stressor:",
-                                                  #                                 choices = unique(starwars$species)
-                                                  #              ),
+                                                
                                       ),
+                                      #sidebarPanel("Learn more about stressors here:",
+                                       #             radioButtons(inputId = "pick_species",
+                                        #                              label = "Choose stressor:",
+                                         ##        ),
+                                      #),
                                       mainPanel("OUTPUT!",
                                                 plotOutput("sw_plot")
                                       )
                                     )
                            ),
                            tabPanel("Mapping Pollution Stress on Species"),
-                           tabPanel("Thing 3")
+                           tabPanel("Summary Table")
                 )
 )
 
